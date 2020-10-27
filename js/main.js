@@ -8,12 +8,6 @@ window.addEventListener('load', function(e){
     document.querySelector('.carousel').addEventListener('click', function(evt){
         let target = evt.target;
 
-        if (currentImg > 2){
-            currenImg = 0;
-        } else if (currentImg < 0){
-            currentImg = 2;
-        }
-        
         if (target.classList.contains('control')) {
 
             if (target.classList.contains('next')) {
